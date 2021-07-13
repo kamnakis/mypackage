@@ -1,1 +1,3 @@
-declare function mypackage(): void
+declare module 'mypackage' {
+  function mypackage(): void
+}
