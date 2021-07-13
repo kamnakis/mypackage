@@ -634,8 +634,8 @@ video {
   height: 16rem;
 }
 
-.w-64 {
-  width: 16rem;
+.w-96 {
+  width: 24rem;
 }
 
 .items-center {
@@ -646,8 +646,12 @@ video {
   justify-content: center;
 }
 
-.break-all {
-  word-break: break-all;
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .bg-black {
@@ -662,6 +666,10 @@ video {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .shadow {
