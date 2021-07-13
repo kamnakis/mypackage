@@ -1,3 +1,7 @@
 declare module 'mypackage' {
-  function mypackage(): void
+  interface ConfigurationOptions {
+    endpoint: string
+  }
+
+  function mypackage(options: ConfigurationOptions): void
 }
