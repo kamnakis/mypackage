@@ -1,13 +1,14 @@
 import axios from 'axios'
+import './styles.css'
 
 function showComponent (data) {
   const dialog = `
-  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-    <div class="w-64 h-64 bg-white shadow">
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="w-64 h-64 bg-white shadow">
         <h1>Hello World!</h1>
-        <pre>${data}</pre>
+        <pre>${JSON.stringify(data)}</pre>
+      </div>
     </div>
-  </div>
   `
 
   document.body.insertAdjacentHTML('afterend', dialog)
